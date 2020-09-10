@@ -31,10 +31,14 @@ for (let j = 0; j < listItems.length; j++) {
   listEl.appendChild(listItems[j]);
 }
 
-h1El.style.textAlign = "center";
-h2El.style.textAlign = "center";
+body.setAttribute("style", "background-color: coral;");
+h1El.setAttribute("style", "text-align: center; background-color: #7FFFD4");
+h2El.setAttribute("style", "text-align: center; background-color: #FFFAF0");
 imgEl.setAttribute("height", 400);
 imgEl.setAttribute("width", 600);
-imgEl.setAttribute("style", "display: block; margin: 0 auto;");
-todoEl.setAttribute("style", "margin-top: 10px; text-align:center");
+imgEl.setAttribute("style", "display: block; margin: 0 auto; border: 5px solid");
+todoEl.setAttribute(
+  "style",
+  "margin-top: 10px; text-align:center; font-weight: bold"
+);
 listEl.setAttribute("style", "text-align: center; list-style-position: inside");
